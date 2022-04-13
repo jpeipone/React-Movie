@@ -1,0 +1,26 @@
+.watch {
+  margin-left: 15px;
+  margin-right: 15px;
+  padding-top: 70px;
+}
+
+.watch__title {
+  margin-top: 10px;
+  font-size: 1.2em;
+  color: black;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.watch-container {
+  margin-top: 10px;
+  margin-left: 50px;
+  max-width: 640px;
+}
+
+.watch__overview {
+  margin-top: 25px;
+  font-size: 0.9em;
+  max-width: 640px;
+  color: black;
+  font-family: Helvetica, Arial, sans-serif;
+}

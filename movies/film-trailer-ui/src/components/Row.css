@@ -1,0 +1,108 @@
+body {
+  background-color: #d3d3d3;
+}
+
+img {
+  border-radius: 5%;
+}
+
+.row {
+  margin-left: 20px;
+  margin-top: 5px;
+  background-color: #d3d3d3;
+}
+
+.row-title {
+  color: black;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.3em;
+  margin-left: 20px;
+}
+
+.row-posters {
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  padding: 5px;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.row-posters::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+
+.row-posters {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.row-poster {
+  object-fit: contain;
+  /*width: 100%; <-shrinks image in firefox*/
+  max-width: 300px;
+  max-height: 150px;
+  margin-right: 10px;
+  transition: transform 500ms;
+}
+
+.row-poster:hover {
+  /*transform: scale(1.2);*/
+  position: relative;
+  opacity: 0.8;
+  transition: transform 500ms;
+  z-index: 1;
+  /*transform: translate(-25%);*/
+  /*transform: translateX(25%);*/
+}
+
+.row-posterLarge {
+  max-height: 300px;
+}
+
+.row-posterLarge:hover {
+  /*transform: scale(1.1);*/
+  position: relative;
+  opacity: 0.8;
+  transition: transform 500ms;
+  z-index: 1;
+}
+
+.row-poster__title {
+  vertical-align: text-bottom;
+}
+
+.row-column__title {
+  font-size: 1em;
+  color: black;
+  font-family: Helvetica, Arial, sans-serif;
+  margin-left: 4px;
+}
+
+.row-column__rating {
+  font-size: 0.9em;
+  color: black;
+  font-family: Helvetica, Arial, sans-serif;
+  margin-left: 4px;
+}
+
+.row-column__nowplaying {
+  font-size: 0.8em;
+  color: black;
+  font-family: Helvetica, Arial, sans-serif;
+  margin-right: 5px;
+  margin-left: 4px;
+}
+
+@media only screen and (max-width: 810px) {
+  .row-poster {
+    max-width: 200px;
+  }
+}
+
+@media only screen and (max-width: 810px) {
+  .row-posterLarge {
+    max-height: 200px;
+  }
+}

@@ -1,0 +1,28 @@
+.about-us {
+  display: flex;
+  height: 120vh;
+  background-image: url("/public/images/movie-theater.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.about-h1 {
+  font-size: 3rem;
+  color: black;
+  font-weight: bold;
+  margin-top: 40px;
+  margin: auto;
+}
+
+@media only screen and (max-width: 900px) {
+  .about-us {
+    height: 70vh;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .about-h1 {
+    font-size: 1.5em;
+  }
+}

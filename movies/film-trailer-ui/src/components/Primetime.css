@@ -1,0 +1,104 @@
+.prime-container {
+  display: flex;
+  object-fit: contain;
+  height: 300px;
+  background-color: #5d89ba;
+  padding: 5px;
+}
+
+.prime-column {
+  margin-top: 30px;
+  margin-left: 40px;
+}
+
+.prime-title {
+  border-top: 10px;
+  color: white;
+  font-weight: bold;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 2em;
+  margin-left: 20px;
+}
+
+.prime-description {
+  margin-top: 10px;
+  color: white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  margin-left: 20px;
+  max-width: 700px;
+  line-height: 1.2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.prime-vote {
+  margin-top: 20px;
+  color: white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  margin-left: 20px;
+}
+
+.prime-image {
+  max-width: 700px;
+  border-radius: 0;
+  object-fit: cover;
+  height: 300px;
+}
+
+@media only screen and (max-width: 1100px) {
+  .prime-container {
+    max-height: 200px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .prime-title {
+    margin-left: 2px;
+    font-size: 1em;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .prime-column {
+    margin-top: 15px;
+    margin-left: 20px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .prime-image {
+    max-width: 260px;
+    max-height: 200px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .prime-description {
+    max-width: 550px;
+    margin-left: 2px;
+    font-size: 0.8em;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .prime-vote {
+    margin-left: 2px;
+    font-size: 0.8em;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .prime-description {
+    max-width: 400px;
+    margin-left: 2px;
+    font-size: 0.6em;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .prime-title {
+    font-size: 1em;
+  }
+}
